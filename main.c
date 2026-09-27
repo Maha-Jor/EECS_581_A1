@@ -135,6 +135,7 @@ bool extractIPv4(const string& str, unsigned long& outAddress, int& outPort)
 
         if (!valid)
         {
+            i = end;
             continue;
         }
 
