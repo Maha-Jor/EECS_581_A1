@@ -1,0 +1,235 @@
+These are the test cases that I used to run my code and verify the outputs. 
+
+
+Enter a string (or 'END' to quit): connecting to 192.168.1.1 now
+Extracted IPv4 address: 192.168.1.1 (decimal value: 3232235777, port: none)
+
+Enter a string (or 'END' to quit): server=10.0.0.255:8080end
+Extracted IPv4 address: 10.0.0.255 (decimal value: 167772415, port: 8080)
+
+Enter a string (or 'END' to quit): 192a168.1.1.1
+Extracted IPv4 address: 168.1.1.1 (decimal value: 2818638081, port: none)
+
+Enter a string (or 'END' to quit): abc 256.1.1.1 xyz 192.168.1.1
+Extracted IPv4 address: 192.168.1.1 (decimal value: 3232235777, port: none)
+
+Enter a string (or 'END' to quit): 255.255.255.255
+Extracted IPv4 address: 255.255.255.255 (decimal value: 4294967295, port: none)
+
+Enter a string (or 'END' to quit): 0.0.0.0
+Extracted IPv4 address: 0.0.0.0 (decimal value: 0, port: none)
+
+Enter a string (or 'END' to quit): 1.2.3.4:0
+Extracted IPv4 address: 1.2.3.4 (decimal value: 16909060, port: 0)
+
+Enter a string (or 'END' to quit): 1.2.3.4:65535
+Extracted IPv4 address: 1.2.3.4 (decimal value: 16909060, port: 65535)
+
+Enter a string (or 'END' to quit): hello!!! 10.20.30.40 !!! goodbye
+Extracted IPv4 address: 10.20.30.40 (decimal value: 169090600, port: none)
+
+Enter a string (or 'END' to quit): 192.168.1.1.
+Invalid input: no valid IPv4 address found
+
+Enter a string (or 'END' to quit): 192.168.01.1
+Invalid input: no valid IPv4 address found
+
+Enter a string (or 'END' to quit): 1.2.3.4:99999
+Invalid input: no valid IPv4 address found
+
+Enter a string (or 'END' to quit): 12.34.56
+Invalid input: no valid IPv4 address found
+
+Enter a string (or 'END' to quit): no number here
+Invalid input: no valid IPv4 address found
+
+Enter a string (or 'END' to quit): 256.1.1.1
+Invalid input: no valid IPv4 address found
+
+Enter a string (or 'END' to quit): 999.1.1.1
+Invalid input: no valid IPv4 address found
+
+Enter a string (or 'END' to quit): 123.456.789.1
+Invalid input: no valid IPv4 address found
+
+Enter a string (or 'END' to quit): 1.2.3.4:65536
+Invalid input: no valid IPv4 address found
+
+Enter a string (or 'END' to quit): 1.2.3.4:080
+Invalid input: no valid IPv4 address found
+
+Enter a string (or 'END' to quit): 1.2.3.4:
+Invalid input: no valid IPv4 address found
+
+Enter a string (or 'END' to quit): 1.2.3.4::80
+Invalid input: no valid IPv4 address found
+
+Enter a string (or 'END' to quit): 1.2.3.4.
+Invalid input: no valid IPv4 address found
+
+Enter a string (or 'END' to quit): 1.2.3
+Invalid input: no valid IPv4 address found
+
+Enter a string (or 'END' to quit): 1..2.3
+Invalid input: no valid IPv4 address found
+
+Enter a string (or 'END' to quit): .1.2.3.4
+Invalid input: no valid IPv4 address found
+
+Enter a string (or 'END' to quit): :1.2.3.4
+Invalid input: no valid IPv4 address found
+
+Enter a string (or 'END' to quit): Empty input
+Invalid input: no valid IPv4 address found
+
+Enter a string (or 'END' to quit): 1.0.0.0
+Extracted IPv4 address: 1.0.0.0 (decimal value: 16777216, port: none)
+
+Enter a string (or 'END' to quit): 0.1.2.3
+Extracted IPv4 address: 0.1.2.3 (decimal value: 66051, port: none)
+
+Enter a string (or 'END' to quit): 255.0.0.0
+Extracted IPv4 address: 255.0.0.0 (decimal value: 4278190080, port: none)
+
+Enter a string (or 'END' to quit): 255.255.255.254
+Extracted IPv4 address: 255.255.255.254 (decimal value: 4294967294, port: none)
+
+Enter a string (or 'END' to quit): 00.1.2.3
+Invalid input: no valid IPv4 address found
+
+Enter a string (or 'END' to quit): 1.02.3.4
+Invalid input: no valid IPv4 address found
+
+Enter a string (or 'END' to quit): 1.2.003.4
+Invalid input: no valid IPv4 address found
+
+Enter a string (or 'END' to quit): 1.2.3.04
+Invalid input: no valid IPv4 address found
+
+Enter a string (or 'END' to quit): 1234.1.2.3
+Invalid input: no valid IPv4 address found
+
+Enter a string (or 'END' to quit): 1.1234.2.3
+Invalid input: no valid IPv4 address found
+
+Enter a string (or 'END' to quit): 1.2.1234.3
+Invalid input: no valid IPv4 address found
+
+Enter a string (or 'END' to quit): 1.2.3.1234
+Invalid input: no valid IPv4 address found
+
+Enter a string (or 'END' to quit): .1.2.3
+Invalid input: no valid IPv4 address found
+
+Enter a string (or 'END' to quit): 1.2..3
+Invalid input: no valid IPv4 address found
+
+Enter a string (or 'END' to quit): 1.2.3.
+Invalid input: no valid IPv4 address found
+
+Enter a string (or 'END' to quit): 1.2.3.4.5
+Invalid input: no valid IPv4 address found
+
+Enter a string (or 'END' to quit): 10.20.30.40.50
+Invalid input: no valid IPv4 address found
+
+Enter a string (or 'END' to quit): 1.2.3.4:1
+Extracted IPv4 address: 1.2.3.4 (decimal value: 16909060, port: 1)
+
+Enter a string (or 'END' to quit): 1.2.3.4:9999
+Extracted IPv4 address: 1.2.3.4 (decimal value: 16909060, port: 9999)
+
+Enter a string (or 'END' to quit): 1.2.3.4:65534
+Extracted IPv4 address: 1.2.3.4 (decimal value: 16909060, port: 65534)
+
+Enter a string (or 'END' to quit): 1.2.3.4:00
+Invalid input: no valid IPv4 address found
+
+Enter a string (or 'END' to quit): 1.2.3.4:000
+Invalid input: no valid IPv4 address found
+
+Enter a string (or 'END' to quit): 1.2.3.4:00001
+Invalid input: no valid IPv4 address found
+
+Enter a string (or 'END' to quit): 1.2.3.4:123456
+Invalid input: no valid IPv4 address found
+
+Enter a string (or 'END' to quit): 1.2.3.4:80:90
+Invalid input: no valid IPv4 address found
+
+Enter a string (or 'END' to quit): 1.2.3.4::1
+Invalid input: no valid IPv4 address found
+
+Enter a string (or 'END' to quit): 1.2.3.4:::80
+Invalid input: no valid IPv4 address found
+
+Enter a string (or 'END' to quit): hello 1.2.3.4 goodbye
+Extracted IPv4 address: 1.2.3.4 (decimal value: 16909060, port: none)
+
+Enter a string (or 'END' to quit): !!!1.2.3.4!!!
+Extracted IPv4 address: 1.2.3.4 (decimal value: 16909060, port: none)
+
+Enter a string (or 'END' to quit): abc-1.2.3.4-xyz
+Extracted IPv4 address: 1.2.3.4 (decimal value: 16909060, port: none)
+
+Enter a string (or 'END' to quit): ***server*** 10.20.30.40:8080 ***end***
+Extracted IPv4 address: 10.20.30.40 (decimal value: 169090600, port: 8080)
+
+Enter a string (or 'END' to quit): 256.1.1.1 192.168.1.1
+Extracted IPv4 address: 192.168.1.1 (decimal value: 3232235777, port: none)
+
+Enter a string (or 'END' to quit): 1.2.3.4 999.999.999.999
+Extracted IPv4 address: 1.2.3.4 (decimal value: 16909060, port: none)
+
+Enter a string (or 'END' to quit): END
+Program terminated.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
