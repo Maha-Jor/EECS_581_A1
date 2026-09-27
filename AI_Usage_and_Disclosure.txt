@@ -1,0 +1,49 @@
+On 09/27/26, I used used ChatGPT (GPT-5.6 Luna version). The prompt is as follows:
+
+"There are two parts to this assignment. For the first part, write a C++ program that 
+uses string parsing and validation of structured, numeric-like data embedded in 
+unstructured text. For the second part, you would have to develop and demonstrate 
+disciplined use of generative AI (GAI) tools in software development. The program must 
+read a line of text, then take a valid IPv4 address. The only valid tokens are (.) 
+and (:), and any other character is skipped. Partial matches and truncation aren't 
+allowed for a candidate token. There can't be any leading zeros in an address unless 
+the value is 0. This is optional, but a :port can follow after the fourth octet while 
+the leading-zero rule is still applied. If there is a colon, the port has to be completely 
+valid, or else it will be rejected."
+
+
+
+
+Here are the function returns for C++: 
+// Returns true if a valid address was found, false otherwise.
+// On success: outAddress holds the 32-bit value,
+// and outPort holds the port number, or -1 if no port was present.
+// On failure: outAddress is set to 0 and outPort is set to -1.
+bool extractIPv4(const std::string& str, unsigned long& outAddress, int& outPort);
+
+
+
+There are built-in functions/libraries that are not allowed which are: 
+
+- Any string-to-number conversion function: atoi, atol, atoll, strtol, strtoul, strtod, stoi, stol, stoul, sscanf, scanf with numeric conversions.
+- Any address-parsing library function: inet_aton, inet_pton, inet_addr, or equivalents.
+- Any regular-expression facility (std::regex, POSIX regex.h, or similar) — the parsing and validation logic must be your own character-by-character code, not a pattern matched by a library.
+- Standard character-classification functions (isdigit, etc.) are fine to use.
+
+
+
+The requirements for this C++ program are as follow: 
+
+- Input loop: main continuously prompts the user for input until the user enters END (case-sensitive), then prints Program terminated. and exits.
+- Extraction function: implement extractIPv4 exactly as prototyped above. All digit accumulation must be done by hand.
+- Display: main receives the result from extractIPv4 and formats the output exactly as specified above.
+
+
+
+Most of the code that I submitted was from AI. I ran into a couple of bugs, and I fixed part of 
+some, while AI completed the rest. I used many test cases; including the test cases from the assignment
+and other test cases. I read through each line of code, and approve every line.
+
+
+
+
